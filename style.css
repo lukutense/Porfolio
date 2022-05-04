@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: rgb(203,158,158) no-repeat fixed center;
+    background: linear-gradient(90deg, rgba(203,158,158,0.7544059860272234) 
+0%, rgba(215,163,84,0.9588877787443102) 100%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+header #details {
+    display: flex;
+}
+
+header details summary {
+    margin: 0.2rem;
+    padding:0.3em;
+    list-style: none;
+    font-weight: 500;
+    color: #355070;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 1px solid #355070;
+    border-radius: 0.4rem;
+}
+
+header details summary:hover {
+    color: #efefef;
+    background-color: #355070;
+}
+
+header details p{
+    position: fixed;
+    text-align:justify;
+    max-width: 14em;
+    border: 1px solid #355070;
+    border-radius: 0.4rem;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    background-color: #355070;
+    color: #efefef;
+}
+
+header #title{
+    text-align: center;
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration:none;
+    letter-spacing: 0.4rem;
+    color: #355070;
+    font-size: 2rem;
+    cursor:default;
+}
+
+header h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #355070;
+    letter-spacing: 0.2rem;
+    cursor:default;
+}
+
+header nav {
+    display: flex;
+    list-style-type: none;
+    text-align: start;
+}
+
+header nav a {
+    text-decoration:none;
+    font-weight: 500;
+    color: #355070;
+    cursor: pointer;
+    margin: 0.2rem;
+    border-radius: 0.4rem;
+}
+
+a {
+    border: 1px solid #355070;
+    transition: all 0.4s ease;
+    padding:0.4rem;
+}
+
+a:hover {
+    color: #efefef;
+    background-color: #355070;
+}
+
+main {
+    width: 95%;
+    margin: 4rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item {
+    margin: 1rem;
+    background: rgb(241,241,241);
+    background: linear-gradient(90deg, rgba(241,241,241,0.7544059860272234) 0%, 
+    rgba(255,255,255,0.9588877787443102) 100%);
+    border-radius: 0.4rem;
+    padding: 1rem;
+}
+
+.grid-item {
+    transition: box-shadow 0.4s ease;
+}
+
+.grid-item:hover {
+    box-shadow: 6px 4px 3px rgb(197, 196, 196);
+}
+
+.grid-item p {
+    padding-top: 1rem;
+    text-align:left;    
+}
+
+.box1 {
+    grid-row: 1/4;
+}
+
+.box4 {
+    grid-row:2/4;
+}
+
+.box7 {
+    grid-row: 2/5;
+}
