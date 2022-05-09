@@ -21,40 +21,7 @@ header {
     padding: 1em;
 }
 
-header #details {
-    display: flex;
-}
-
-header details summary {
-    margin: 0.2rem;
-    padding:0.3em;
-    list-style: none;
-    font-weight: 500;
-    color: #355070;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    border: 1px solid #355070;
-    border-radius: 0.4rem;
-}
-
-header details summary:hover {
-    color: #efefef;
-    background-color: #355070;
-}
-
-header details p{
-    position: fixed;
-    text-align:justify;
-    max-width: 14em;
-    border: 1px solid #355070;
-    border-radius: 0.4rem;
-    margin: 0.3rem;
-    padding: 0.3rem;
-    background-color: #355070;
-    color: #efefef;
-}
-
-header #title{
+header #titulo {
     text-align: center;
 }
 
@@ -65,6 +32,7 @@ header h1 {
     color: #355070;
     font-size: 2rem;
     cursor:default;
+    font-weight: 600;
 }
 
 header h5 {
@@ -72,15 +40,17 @@ header h5 {
     color: #355070;
     letter-spacing: 0.2rem;
     cursor:default;
+    font-weight: 600;
 }
 
-header nav {
+header #contact {
     display: flex;
+    justify-content:center;
     list-style-type: none;
     text-align: start;
 }
 
-header nav a {
+header div a {
     text-decoration:none;
     font-weight: 500;
     color: #355070;
@@ -100,6 +70,13 @@ a:hover {
     background-color: #355070;
 }
 
+header div a{
+    padding: 8px;
+}
+
+header div .hola{
+    padding: 8px 11px 8px 11px;
+}
 main {
     width: 95%;
     margin: 4rem auto 0;
@@ -124,12 +101,89 @@ main {
     box-shadow: 6px 4px 3px rgb(197, 196, 196);
 }
 
-.grid-item p {
-    padding-top: 1rem;
-    text-align:left;    
+.grid-item h3 {
+    font-weight: 700;
+    cursor: default;
 }
 
-.box1 {
+.grid-item p {
+    padding-top: 1rem;
+    text-align:left;  
+    line-height: 1.5rem; 
+    cursor: default;
+}
+
+.accordion-item {
+    width: 92%;
+    position:relative;
+    margin: 1rem auto 0;
+}
+
+.accordion-flush .accordion-item {
+    border-radius: 0.4rem;
+    background: rgb(241,241,241);
+    background: linear-gradient(90deg, rgba(241,241,241,0.7544059860272234) 0%, 
+    rgba(255,255,255,0.9588877787443102) 100%);
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 0.4rem;
+    background: rgb(232, 232, 232);
+    background: linear-gradient(90deg, rgba(232, 232, 232, 0.754) 0%, 
+    rgba(255,255,255,0.9588877787443102) 100%);
+}
+
+.accordion-flush .accordion-item:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.accordion-header button {
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color:black;
+}
+
+.accordion-button:focus {
+    border-color: transparent;
+}
+
+/* footer #details {
+    display: flex;
+}
+
+footer details summary {
+    margin: 0.2rem;
+    padding:0.3em;
+    list-style: none;
+    font-weight: 500;
+    color: #355070;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 1px solid #355070;
+    border-radius: 0.4rem;
+}
+
+footer details summary:hover {
+    color: #efefef;
+    background-color: #355070;
+}
+
+footer details p{
+    position: fixed;
+    text-align:justify;
+    max-width: 14em;
+    border: 1px solid #355070;
+    border-radius: 0.4rem;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    background-color: #355070;
+    color: #efefef;
+} */
+
+/* .box1 {
     grid-row: 1/4;
 }
 
@@ -139,4 +193,33 @@ main {
 
 .box7 {
     grid-row: 2/5;
+} */
+
+@media only screen and (max-width: 768px){
+    
+    main {
+        grid-template-columns: 50% 50%;
+    }
+
+/*     .box1 {
+        grid-row: 1/3;
+    }
+    
+    .box4 {
+        grid-row:2/4;
+    }
+    
+    .box7 {
+        grid-row: 2/4;
+    } */
+
+    
+}
+
+@media only screen and (max-width: 600px){
+    
+    main {
+        grid-template-columns: 100%;
+    }
+    
 }
