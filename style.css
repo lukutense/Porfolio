@@ -86,7 +86,7 @@ main {
     align-items: flex-start;
 }
 
-.grid-item {
+.flex-item {
     margin: 1rem;
     background: rgb(241,241,241);
     background: linear-gradient(90deg, rgba(241,241,241,0.7544059860272234) 0%, 
@@ -96,16 +96,16 @@ main {
     transition: box-shadow 0.4s ease;
 }
 
-.grid-item:hover {
+.flex-item:hover {
     box-shadow: 6px 4px 3px rgb(197, 196, 196);
 }
 
-.grid-item h3 {
+.flex-item h3 {
     font-weight: 700;
     cursor: default;
 }
 
-.grid-item p {
+.flex-item p {
     padding-top: 1rem;
     text-align:left;  
     line-height: 1.5rem; 
